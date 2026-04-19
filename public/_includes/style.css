@@ -1,0 +1,105 @@
+/* ====================
+HAND-CODED BY AANT 340
+ CLASS OF SPRING 2026
+==================== */
+
+/* The root defines all variables to be used in style.css. */
+:root {
+	/* These are the three colours the class agreed upon. They will ONLY be used to define variables further down in the root. */
+	--jasmine: #ffdc82;
+	--cornflower: #82aeff;
+	--verdigris: #1b998b;
+
+	/* These variables define colours on the page. Use them. */
+	--page-background: #fff;
+	--container-background: transparent; /* This is probably temporary & I'll likely edit it out. – Olly */
+	--text-color: #000;
+}
+
+/* ========== ABSOLUTE BASICS ========== */
+body {
+	background-color: var(--page-background);
+	color: var(--text-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 30px;
+	background-color: var(--container-background);
+}
+
+/* ========== HEADER ========== */
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h1 span {
+	display: block;
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+	margin: -10px 0px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+ul.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  margin: -10px 0 0 -3ch; /* -3ch left margin to offset a hidden separator. */
+}
+ul.nav li {
+  padding-left: 1ch;
+}
+ul.nav li+li::before {
+  content: '—';
+  display: inline-block;
+  margin-right: 1ch; /* Using ch because this depends on text size, which accessibility settings may change. */
+  text-align: center;
+}
+
+/* ========== LINKS ========== */
+a {
+	color: var(--verdigris);
+	text-decoration: underline;
+	text-decoration-style: double;
+	transition: 0.2s;
+}
+
+a:hover {
+	color: var(--jasmine);
+}
+
+/* ========== ACCESSIBILITY TOOLS - DO NOT EDIT W/O REASON =========== */
+#skip-to-content-link {
+position: absolute;
+top: -40px;
+left: 0;
+padding: 8px;
+z-index: 100;
+transition: top 0.3s;
+}
+
+#skip-to-content-link:focus {
+top: 0; /* Brings it into view on focus */
+}

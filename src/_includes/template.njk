@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Identity -->
+		<title>{{ title }}</title>
+		<meta
+			content="View and participate in a study of how belonging shapes and is shaped by everyday experiences at the University of Albany."
+			name="description" />
+		<link href="{{ nesting }}/_includes/favicon.ico" rel="icon" type="image/x-icon" />
+
+		<!-- Encoding -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Refsheets -->
+		<link
+			rel="stylesheet"
+			href="{{ nesting }}_includes/style.css{{ nocache }}" />
+
+		<!-- Anti-AI measures -->
+		<meta name="robots" content="noai, noimageai">
+	</head>
+	<body>
+		<!-- Skip-to-Content — DO NOT TOUCH -->
+		<a href="#content" id="skip-to-content-link">Skip to content</a>
+
+		<div class="container">
+			<header><h1 id="header-text">Map Your UA<span>Finding Belonging</span></h1></header>
+			<nav><ul class="nav"><li><a href="/">home</a></li><li><a href="/get-involved">get involved</a></li></ul></nav>
+			<main id="content" tabindex="-1"> <!-- This tabindex allows screen readers to focus this element. -->
+				{{ content | safe }}
+			</main>
+		</div>
+
+		<!-- JS below this line -->
+	</body>
+</html>
