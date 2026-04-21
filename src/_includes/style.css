@@ -104,6 +104,14 @@ th, td {
 	text-align: center;
 }
 
+/* ========== IFRAME (SURVEY) ========== */
+.survey {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 /* ========== ACCESSIBILITY TOOLS - DO NOT EDIT W/O REASON =========== */
 #skip-to-content-link {
 position: absolute;
