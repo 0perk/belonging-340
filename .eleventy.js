@@ -24,6 +24,7 @@ module.exports = function (eleventyConfig) {
 		"png",
 		"jpg",
 		"jpeg",
+		"svg",
 	]);
 
 	// These insure everything is compiled correctly in the public folder.

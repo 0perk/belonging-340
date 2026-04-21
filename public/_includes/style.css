@@ -18,6 +18,8 @@ HAND-CODED BY AANT 340
 
 /* ========== ABSOLUTE BASICS ========== */
 body {
+	display: flex;
+	justify-content: center;
 	background-color: var(--page-background);
 	color: var(--text-color);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -29,7 +31,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin: 0px 30px;
+	width: 70%;
 	background-color: var(--container-background);
 }
 
@@ -88,6 +90,18 @@ a {
 
 a:hover {
 	color: var(--jasmine);
+}
+
+/* =========== TABLES ========== */
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+th, td {
+	border: 2px solid;
+	padding: 5px;
+	text-align: center;
 }
 
 /* ========== ACCESSIBILITY TOOLS - DO NOT EDIT W/O REASON =========== */
