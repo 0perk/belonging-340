@@ -22,8 +22,8 @@ body {
 	justify-content: center;
 	background-color: var(--page-background);
 	color: var(--text-color);
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 14px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 17px;
 	text-align: justify;
 }
 
@@ -44,18 +44,40 @@ header {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 70px;
+	font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 h1 span {
 	display: block;
-	font-size: 20px;
-	margin-top: 8px;
+	margin-top: 5px;
+    font-size:20px; 
+	color:#444; 
+	word-spacing:1px; 
+	letter-spacing:2px;
+    text-transform: uppercase; 
+	font-family:"Raleway", sans-serif; 
+	font-weight:500;
+
+	display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+h1 span:after, h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid var(--cornflower);
+    border-top: 1px solid var(--cornflower);
+    height: 5px;
+  	background-color: var(--page-background);
 }
 
 /* ========== NAVIGATION ========== */
 nav {
-	margin: -10px 0px;
+	margin: -40px 0px 30px;
 	width: 80%;
 	display: flex;
 	justify-content: center;
@@ -78,6 +100,56 @@ ul.nav li+li::before {
   display: inline-block;
   margin-right: 1ch; /* Using ch because this depends on text size, which accessibility settings may change. */
   text-align: center;
+}
+
+/* ========== HEADERS ========== */
+h2, h3 {
+	display: block;
+	margin: -10px 0 0 0;
+	word-spacing:1px; 
+	letter-spacing:2px;
+    text-transform: uppercase; 
+	font-family:"Raleway", sans-serif; 
+	font-weight:500;
+	
+}
+
+h2 {
+	display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 20px;
+	border-bottom: 1px var(--cornflower);
+}
+
+h3::after {
+	background-color: var(--cornflower);
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.1rem;
+    width: 60%;
+	margin: 10px 20%;
+}
+
+h2:before, h2:after {
+	content: " ";
+    display: block;
+    border-top: 4px solid var(--cornflower);
+	margin-top: 5px;
+	border-radius: 10px;
+    height: 5px;
+  	background-color: var(--page-background);
+}
+
+h2.top-space {
+	margin-top: 10px;
 }
 
 /* ========== LINKS ========== */
