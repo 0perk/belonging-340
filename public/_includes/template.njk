@@ -19,14 +19,31 @@
 
 		<!-- Anti-AI measures -->
 		<meta name="robots" content="noai, noimageai">
+
+		<!-- Code credit. Invisible on-site. -->
+		 <script>
+			console.log("This website was hand-coded by Oliver Perkins with help from Jack Maillero.\nIf you contribute, feel free to add your name!")
+		 </script>
 	</head>
 	<body>
 		<!-- Skip-to-Content — DO NOT TOUCH -->
 		<a href="#content" id="skip-to-content-link">Skip to content</a>
 
 		<div class="container">
-			<header><div class="bar"><h1 id="header-text">Map Your UA<span>Finding Belonging</span></h1></div></header>
-			<nav><ul class="nav"><li><a href="/">home</a></li><li><a href="/get-involved">get involved</a></li></ul></nav>
+			<header>
+				<div class="bar">
+					<h1 id="header-text">Map Your UA
+						<span>Finding Belonging</span>
+					</h1>
+				</div>
+			</header>
+			<nav>
+				<ul class="nav">
+					<li><a href="{{ nesting }}/">home</a></li>
+					<li><a href="{{ nesting }}/get-involved">get involved</a></li>
+					<li><a href="{{ nesting }}/gallery">gallery</a></li>
+				</ul>
+			</nav>
 			<main id="content" tabindex="-1"> <!-- This tabindex allows screen readers to focus this element. -->
 				{{ content | safe }}
 			</main>
